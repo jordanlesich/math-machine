@@ -1,24 +1,7 @@
 'use strict';
 
-import {
-    randBetween, 
-    randIndex
-} from './helpers.js'
+import { getOrderOps, getMathFn } from './helpers.js'
 
-import {
-    findRelevantOperators,
-    findNumberRange, 
-    getOrderOps,
-    getMathFn
-} from './gameParams.js'
-
-const getOp = (lvl) => {
-    const availableOps = findRelevantOperators(lvl)
-    return availableOps[randIndex(availableOps.length)]
-}
-const getNum = (lvl) => {  
-   return randBetween(findNumberRange(lvl))
-}
 
 const reIndex = (expression) => expression.map((char, index) => {
     return {...char, id : index}
@@ -65,12 +48,5 @@ const parseString = (string) => {
 const generateAnswer = (string) => {
     return processOperator(parseString(string))
 }
-const generateQuestion = ({numLvl, opLvl, numOpLvl}) => {
-    let stringStart = getNum(numLvl)
-    for(let i = 0; i < numOpLvl; i++){
-        stringStart = ` ${stringStart} ${getOp(opLvl)} ${getNum(numLvl)}`
-    }
-    return stringStart
-}
 
-export {generateAnswer, generateQuestion}
+export {generateAnswer}
