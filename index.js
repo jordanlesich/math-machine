@@ -9,6 +9,7 @@ function createAndSolve(vectors){
     const answer = generateAnswer(question)
     const evilAnswer = eval(question)
     
+    console.log(`Question: ${question} = ${answer}`)
     return evilAnswer == answer
 }
 
