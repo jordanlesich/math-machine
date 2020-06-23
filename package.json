@@ -1,0 +1,35 @@
+{
+  "name": "math-machine",
+  "version": "1.0.0",
+  "description": "**Math Machine** is a basic game that generates random Arithmetic questions that the user can answer. It does not use the eval() method or the Function keyword to generate the answer.",
+  "main": "app.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "start": "npx nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jordanlesich/math-machine.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jordanlesich/math-machine/issues"
+  },
+  "homepage": "https://github.com/jordanlesich/math-machine#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "connect-loki": "^1.1.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "express-static": "^1.2.6",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
