@@ -17,7 +17,7 @@ TODO:
   - Allow amount of time to be dynamically generated as a difficulty vector
   - Create a way of generating the correct amount of score based on time left when answered.
 - UI
-  - No need to clean out the disaster known as UI.js, seeing as a new UI solution will be implemented. If not, then a complete component
+  - No need to clean out the disaster known as UI.js, seeing as a new UI solution will be implemented. If not, then a complete component based refactoring is in order.
   - Design rough UI layout
   - Brainstorm implementation of UI (probably in React)
   - Create UI components and implement funciionality based on changes in user input, player state, and generated QA's.
