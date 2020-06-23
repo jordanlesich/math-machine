@@ -1,11 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./UI.css" />
     <title>Document</title>
-</head>
-<body>
-    <script type='module' src='./index.js'></script>
-</body>
+  </head>
+  <body>
+    <header class="scoreboard">
+      <p class="score">Score: 0</p>
+      <p class="streak">Streak: 0</p>
+      <p class="current-level">Level: 0</p>
+      <p class="next-level">Next Level: 0</p>
+    </header>
+    <main class="quiz-area">
+      <div class="feedback">
+        <button class="continue-button">Start Game</button>
+        <p class="feedback-text"></p>
+      </div>
+      <div class="quiz">
+        <p class="question"></p>
+        <div class="keypad">
+          <span class="up-arrow arrow">
+            &uarr;
+            <p class="up-option"></p>
+          </span>
+          <span class="left-arrow arrow">
+            <p class="left-option"></p>
+            &larr;
+          </span>
+          <span class="down-arrow arrow">
+            <p class="down-option"></p>
+            &darr;
+          </span>
+          <span class="right-arrow arrow">
+            <p class="right-option"></p>
+            &rarr;
+          </span>
+        </div>
+      </div>
+    </main>
+    <script type="module" src="./index.js"></script>
+  </body>
 </html>
