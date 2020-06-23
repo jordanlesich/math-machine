@@ -20,10 +20,12 @@ function checkAnswer(answer) {
   const correct = answer === state.getAnswer();
   if (correct) {
     const didLvlUp = state.handleCorrect();
-    if (didLvlUp) UI.handleLvlUp(state.getLvl);
+    //TODO
+    // if (didLvlUp) UI.handleLvlUp(state.getLvl);
   } else {
     const didLvlDown = state.handleIncorrect();
-    if (didLvlDown) UI.handleLvlDown(state.getLvl);
+    //TODO
+    // if (didLvlDown) UI.handleLvlDown(state.getLvl);
   }
   return { correct, scores: state.getScores() };
 }

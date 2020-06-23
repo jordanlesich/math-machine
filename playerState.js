@@ -15,7 +15,7 @@ const setPts = (pts) => {
   if (playerPts + pts >= nextLevel) {
     userState.setLvl(1);
     playerPts = playerPts + pts - nextLevel;
-    nextLevel = roundInt(nextLevel * 1.2);
+    nextLevel = Math.round(nextLevel * 1.2);
   } else {
     playerPts = playerPts + pts;
   }
